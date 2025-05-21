@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вдорогу - Пасажирські перевезення</title>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="js/tailwind-config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -15,331 +16,318 @@
 
 <body>
     <header class="bg-[#1F2937] text-white">
-        <div class="container mx-auto px-2 py-1.5 md:px-4 md:py-3 lg:px-6 lg:py-4 flex justify-between items-center">
-            <div class="flex items-center gap-1 md:gap-2 lg:gap-3 flex-1 justify-center md:flex-none md:justify-start">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2 md:flex-none flex-1 justify-center md:justify-start">
                 <div class="w-16 h-10 relative flex items-center justify-center">
                     <i class="ri-bus-line ri-lg text-primary absolute"></i>
                     <div class="wheel-front absolute left-2 bottom-1 w-2 h-2 bg-primary rounded-full"></div>
                     <div class="wheel-back absolute right-2 bottom-1 w-2 h-2 bg-primary rounded-full"></div>
                 </div>
-                <a href="/" class="text-base md:text-lg lg:text-xl font-['Pacifico'] text-white">В дорогу</a>
+                <a href="/" class="text-2xl font-['Pacifico'] text-white">В дорогу</a>
             </div>
-            <nav class="hidden md:flex items-center gap-4 md:gap-5 lg:gap-6">
-                <a href="/napryamky"
-                    class="text-xs md:text-sm lg:text-base hover:text-primary transition-colors">Напрямки</a>
-                <a href="/about" class="text-xs md:text-sm lg:text-base hover:text-primary transition-colors">Про
-                    нас</a>
-                <a href="/contacts"
-                    class="text-xs md:text-sm lg:text-base hover:text-primary transition-colors">Контакти</a>
-                <a href="tel:+380966788281"
-                    class="flex items-center gap-0.5 md:gap-1 hover:text-primary transition-colors">
-                    <i class="ri-phone-line text-xs md:text-sm lg:text-base"></i>
-                    <span class="text-xs md:text-sm lg:text-base">+380966788281</span>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="/napryamky" class="hover:text-primary transition-colors">Напрямки</a>
+                <a href="/about" class="hover:text-primary transition-colors">Про нас</a>
+                <a href="/contacts" class="hover:text-primary transition-colors">Контакти</a>
+                <a href="tel:+380966788281" class="flex items-center gap-2 hover:text-primary transition-colors">
+                    <i class="ri-phone-line"></i>
+                    <span>+380966788281</span>
                 </a>
             </nav>
         </div>
     </header>
     <div class="md:hidden bg-[#1F2937] border-t border-gray-700">
-        <div class="container mx-auto px-3 py-1.5">
+        <div class="container mx-auto px-4 py-3">
             <div class="flex items-center justify-between">
-                <div class="bg-primary/10 px-2 py-1 !rounded-button flex-1">
-                    <a href="tel:+380966788281" class="flex items-center gap-1 text-primary justify-center">
-                        <i class="ri-phone-line text-xs"></i>
-                        <span class="font-semibold text-xs">+380966788281</span>
+                <div class="bg-primary/10 px-4 py-2 !rounded-button flex-1">
+                    <a href="tel:+380966788281" class="flex items-center gap-2 text-primary justify-center">
+                        <i class="ri-phone-line"></i>
+                        <span class="font-semibold">+380966788281</span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <section class="hero-section hidden md:flex min-h-[300px] md:min-h-[400px] lg:min-h-[500px] items-center"
+    <section class="hero-section hidden md:flex min-h-[400px] md:min-h-[500px] lg:min-h-[600px] items-center"
         style="background-image: url('images/hero-background.jpeg'); background-position: center; background-size: cover;">
-        <div class="container mx-auto px-4 py-5 md:py-8 lg:py-10 hero-content">
-            <div class="max-w-md md:max-w-lg lg:max-w-xl">
-                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2 md:mb-3 lg:mb-4">
-                    Комфортні міжнародні перевезення</h1>
-                <p class="text-sm md:text-base lg:text-lg text-gray-200 mb-4 md:mb-5 lg:mb-6">Безпечні та зручні поїздки
-                    по Європі з перевіреними перевізниками. Бронюйте без передоплати та подорожуйте з комфортом.</p>
+        <div class="container mx-auto px-4 py-8 md:py-12 lg:py-16 hero-content">
+            <div class="max-w-2xl">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">Комфортні міжнародні
+                    перевезення</h1>
+                <p class="text-xl text-gray-200 mb-8">Безпечні та зручні поїздки по Європі з перевіреними перевізниками.
+                    Бронюйте без передоплати та подорожуйте з комфортом.</p>
                 <a href="/napryamky"
-                    class="inline-block bg-primary text-[#1F2937] font-semibold px-5 py-2.5 md:px-6 md:py-3 lg:px-7 lg:py-3.5 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition-all text-xs md:text-sm lg:text-base">Обрати
+                    class="inline-block bg-primary text-[#1F2937] font-semibold px-8 py-4 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition-all">Обрати
                     напрямок</a>
             </div>
         </div>
     </section>
-    <section class="py-5 md:py-10 lg:py-12 bg-gray-50">
+    <section class="py-8 md:py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto bg-white shadow-lg !rounded-lg overflow-hidden">
-                <div class="p-5 md:p-6 lg:p-8">
-                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-[#1F2937] mb-3 md:mb-4 lg:mb-5">Куди
-                        їдемо?</h2>
+            <div class="max-w-4xl mx-auto bg-white shadow-lg !rounded-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-[#1F2937] mb-6">Куди їдемо?</h2>
                     <form>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3 lg:gap-4 mb-3 md:mb-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                             <div>
-                                <label for="from"
-                                    class="block text-xs md:text-sm lg:text-base font-medium text-gray-700 mb-0.5 md:mb-1">Звідки</label>
+                                <label for="from" class="block text-sm font-medium text-gray-700 mb-1">Звідки</label>
                                 <input type="text" id="from"
-                                    class="w-full px-2.5 py-1.5 md:px-3 md:py-2 lg:px-4 lg:py-2.5 border border-gray-300 !rounded-button focus:outline-none focus:ring-2 focus:ring-primary text-sm md:text-base"
+                                    class="w-full px-4 py-3 border border-gray-300 !rounded-button focus:outline-none focus:ring-2 focus:ring-primary"
                                     placeholder="Введіть місто відправлення">
                             </div>
                             <div>
-                                <label for="to"
-                                    class="block text-xs md:text-sm lg:text-base font-medium text-gray-700 mb-0.5 md:mb-1">Куди</label>
+                                <label for="to" class="block text-sm font-medium text-gray-700 mb-1">Куди</label>
                                 <div class="relative">
                                     <input type="text" id="to"
-                                        class="w-full px-2.5 py-1.5 md:px-3 md:py-2 lg:px-4 lg:py-2.5 border border-gray-300 !rounded-button focus:outline-none focus:ring-2 focus:ring-primary text-sm md:text-base"
+                                        class="w-full px-4 py-3 border border-gray-300 !rounded-button focus:outline-none focus:ring-2 focus:ring-primary"
                                         placeholder="Введіть місто призначення">
                                 </div>
                             </div>
                         </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3 lg:gap-4 mb-3 md:mb-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                             <div>
-                                <label for="date"
-                                    class="block text-xs md:text-sm lg:text-base font-medium text-gray-700 mb-0.5 md:mb-1">Дата
+                                <label for="date" class="block text-sm font-medium text-gray-700 mb-1">Дата
                                     поїздки</label>
                                 <input type="date" id="date"
-                                    class="w-full px-2.5 py-1.5 md:px-3 md:py-2 lg:px-4 lg:py-2.5 border border-gray-300 !rounded-button focus:outline-none focus:ring-2 focus:ring-primary text-sm md:text-base">
+                                    class="w-full px-4 py-3 border border-gray-300 !rounded-button focus:outline-none focus:ring-2 focus:ring-primary">
                             </div>
                             <div>
-                                <label for="passengers"
-                                    class="block text-xs md:text-sm lg:text-base font-medium text-gray-700 mb-0.5 md:mb-1">Кількість
+                                <label for="passengers" class="block text-sm font-medium text-gray-700 mb-1">Кількість
                                     пасажирів</label>
                                 <input type="number" id="passengers" min="1" max="10" value="1"
-                                    class="w-full px-2.5 py-1.5 md:px-3 md:py-2 lg:px-4 lg:py-2.5 border border-gray-300 !rounded-button focus:outline-none focus:ring-2 focus:ring-primary text-sm md:text-base">
+                                    class="w-full px-4 py-3 border border-gray-300 !rounded-button focus:outline-none focus:ring-2 focus:ring-primary">
                             </div>
                         </div>
                         <button type="submit"
-                            class="w-full bg-primary text-[#1F2937] font-semibold px-4 py-2.5 md:px-5 md:py-3 lg:px-6 lg:py-3.5 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition-all text-sm md:text-base">Забронювати</button>
+                            class="w-full bg-primary text-[#1F2937] font-semibold px-6 py-4 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition-all">Забронювати</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-10 md:py-12">
+    <section class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-center text-[#1F2937] mb-6 md:mb-8">Наші переваги
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-6">
-                <div class="bg-white p-3 md:p-4 lg:p-5 shadow-md !rounded-lg text-center">
+            <h2 class="text-3xl font-bold text-center text-[#1F2937] mb-12">Наші переваги</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white p-6 shadow-md !rounded-lg text-center">
                     <div
-                        class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 mx-auto mb-2 md:mb-3 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full">
-                        <i class="ri-wallet-3-line ri-lg md:ri-xl lg:ri-2x text-primary"></i>
+                        class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full">
+                        <i class="ri-wallet-3-line ri-2x text-primary"></i>
                     </div>
-                    <h3 class="text-base md:text-lg lg:text-xl font-semibold mb-1.5 md:mb-2">Оплата при посадці</h3>
-                    <p class="text-gray-600 text-xs md:text-sm lg:text-base">Бронюйте місце без передоплати. Оплачуйте
-                        поїздку тільки при посадці в автобус.</p>
+                    <h3 class="text-xl font-semibold mb-3">Оплата при посадці</h3>
+                    <p class="text-gray-600">Бронюйте місце без передоплати. Оплачуйте поїздку тільки при посадці в
+                        автобус.</p>
                 </div>
-                <div class="bg-white p-3 md:p-4 lg:p-5 shadow-md !rounded-lg text-center">
+                <div class="bg-white p-6 shadow-md !rounded-lg text-center">
                     <div
-                        class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 mx-auto mb-2 md:mb-3 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full">
-                        <i class="ri-map-pin-line ri-lg md:ri-xl lg:ri-2x text-primary"></i>
+                        class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full">
+                        <i class="ri-map-pin-line ri-2x text-primary"></i>
                     </div>
-                    <h3 class="text-base md:text-lg lg:text-xl font-semibold mb-1.5 md:mb-2">Завозимо по адресі</h3>
-                    <p class="text-gray-600 text-xs md:text-sm lg:text-base">Наші водії заберуть вас із зазначеної
-                        адреси та доставлять максимально близько до пункту призначення.</p>
+                    <h3 class="text-xl font-semibold mb-3">Завозимо по адресі</h3>
+                    <p class="text-gray-600">Наші водії заберуть вас із зазначеної адреси та доставлять максимально
+                        близько до пункту призначення.</p>
                 </div>
-                <div class="bg-white p-3 md:p-4 lg:p-5 shadow-md !rounded-lg text-center">
+                <div class="bg-white p-6 shadow-md !rounded-lg text-center">
                     <div
-                        class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 mx-auto mb-2 md:mb-3 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full">
-                        <i class="ri-shield-check-line ri-lg md:ri-xl lg:ri-2x text-primary"></i>
+                        class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full">
+                        <i class="ri-shield-check-line ri-2x text-primary"></i>
                     </div>
-                    <h3 class="text-base md:text-lg lg:text-xl font-semibold mb-1.5 md:mb-2">Надійні перевізники</h3>
-                    <p class="text-gray-600 text-xs md:text-sm lg:text-base">Співпрацюємо тільки з перевіреними
-                        перевізниками, які мають всі необхідні дозволи та ліцензії.</p>
+                    <h3 class="text-xl font-semibold mb-3">Надійні перевізники</h3>
+                    <p class="text-gray-600">Співпрацюємо тільки з перевіреними перевізниками, які мають всі необхідні
+                        дозволи та ліцензії.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-10 md:py-12 bg-gray-50">
+    <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center mb-6 md:mb-8">
-                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-[#1F2937]">Популярні напрямки</h2>
-                <div class="hidden md:flex gap-1.5 md:gap-2">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold text-[#1F2937]">Популярні напрямки</h2>
+                <div class="hidden md:flex gap-2">
                     <button id="scrollLeft"
-                        class="w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 flex items-center justify-center bg-white shadow-md !rounded-full hover:bg-primary hover:text-[#1F2937] transition-colors">
-                        <i class="ri-arrow-left-s-line ri-sm md:ri-base"></i>
+                        class="w-10 h-10 flex items-center justify-center bg-white shadow-md !rounded-full hover:bg-primary hover:text-[#1F2937] transition-colors">
+                        <i class="ri-arrow-left-s-line ri-lg"></i>
                     </button>
                     <button id="scrollRight"
-                        class="w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 flex items-center justify-center bg-white shadow-md !rounded-full hover:bg-primary hover:text-[#1F2937] transition-colors">
-                        <i class="ri-arrow-right-s-line ri-sm md:ri-base"></i>
+                        class="w-10 h-10 flex items-center justify-center bg-white shadow-md !rounded-full hover:bg-primary hover:text-[#1F2937] transition-colors">
+                        <i class="ri-arrow-right-s-line ri-lg"></i>
                     </button>
                 </div>
             </div>
             <div class="relative">
                 <div class="overflow-x-auto no-scrollbar" id="destinationsScroll">
-                    <div class="flex gap-2.5 md:gap-3 lg:gap-4 pb-2.5 md:pb-3">
-                        <a href="/napryamky/kyiv-vilnius" class="block min-w-[260px] sm:min-w-[280px] md:min-w-[300px]">
+                    <div class="flex gap-4 md:gap-6 pb-4" style="min-width: max-content;">
+                        <a href="/napryamky/kyiv-vilnius" class="block min-w-[300px] sm:min-w-[320px]">
                             <div
                                 class="bg-white shadow-md overflow-hidden !rounded-lg hover:shadow-lg transition-shadow">
-                                <div class="h-36 md:h-40 lg:h-48 overflow-hidden">
-                                    <img src="images/vilnius.jpg" alt="Київ - Вільнюс"
+                                <div class="h-48 overflow-hidden">
+                                    <img src="images/vilnius.jpeg" alt="Київ - Вільнюс"
                                         class="w-full h-full object-cover object-top">
                                 </div>
-                                <div class="p-3 md:p-4">
-                                    <h3 class="text-base md:text-lg font-semibold mb-1">Київ - Вільнюс</h3>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Київ - Вільнюс</h3>
                                     <div class="flex justify-between items-center">
-                                        <div class="text-gray-600 text-xs md:text-sm">
-                                            <div class="flex items-center gap-0.5 md:gap-1 mb-0.5 md:mb-1">
-                                                <i class="ri-time-line text-xs md:text-sm"></i>
+                                        <div class="text-gray-600">
+                                            <div class="flex items-center gap-1 mb-1">
+                                                <i class="ri-time-line"></i>
                                                 <span>15 годин</span>
                                             </div>
-                                            <div class="flex items-center gap-0.5 md:gap-1">
-                                                <i class="ri-calendar-line text-xs md:text-sm"></i>
+                                            <div class="flex items-center gap-1">
+                                                <i class="ri-calendar-line"></i>
                                                 <span>Вт, Чт, Сб</span>
                                             </div>
                                         </div>
-                                        <div class="text-base md:text-lg font-bold text-[#1F2937]">від 1600 грн</div>
+                                        <div class="text-xl font-bold text-[#1F2937]">від 1600 грн</div>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a href="/napryamky/lviv-riga" class="block min-w-[260px] sm:min-w-[280px] md:min-w-[300px]">
+                        <a href="/napryamky/lviv-riga" class="block min-w-[300px] sm:min-w-[320px]">
                             <div
                                 class="bg-white shadow-md overflow-hidden !rounded-lg hover:shadow-lg transition-shadow">
-                                <div class="h-36 md:h-40 lg:h-48 overflow-hidden">
-                                    <img src="images/riga.jpg" alt="Львів - Рига"
+                                <div class="h-48 overflow-hidden">
+                                    <img src="images/riga.jpeg" alt="Львів - Рига"
                                         class="w-full h-full object-cover object-top">
                                 </div>
-                                <div class="p-3 md:p-4">
-                                    <h3 class="text-base md:text-lg font-semibold mb-1">Львів - Рига</h3>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Львів - Рига</h3>
                                     <div class="flex justify-between items-center">
-                                        <div class="text-gray-600 text-xs md:text-sm">
-                                            <div class="flex items-center gap-0.5 md:gap-1 mb-0.5 md:mb-1">
-                                                <i class="ri-time-line text-xs md:text-sm"></i>
+                                        <div class="text-gray-600">
+                                            <div class="flex items-center gap-1 mb-1">
+                                                <i class="ri-time-line"></i>
                                                 <span>18 годин</span>
                                             </div>
-                                            <div class="flex items-center gap-0.5 md:gap-1">
-                                                <i class="ri-calendar-line text-xs md:text-sm"></i>
+                                            <div class="flex items-center gap-1">
+                                                <i class="ri-calendar-line"></i>
                                                 <span>Пн, Пт</span>
                                             </div>
                                         </div>
-                                        <div class="text-base md:text-lg font-bold text-[#1F2937]">від 1800 грн</div>
+                                        <div class="text-xl font-bold text-[#1F2937]">від 1800 грн</div>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a href="/napryamky/kyiv-amsterdam"
-                            class="block min-w-[260px] sm:min-w-[280px] md:min-w-[300px]">
+                        <a href="/napryamky/kyiv-amsterdam" class="block min-w-[300px] sm:min-w-[320px]">
                             <div
                                 class="bg-white shadow-md overflow-hidden !rounded-lg hover:shadow-lg transition-shadow">
-                                <div class="h-36 md:h-40 lg:h-48 overflow-hidden">
-                                    <img src="images/amsterdam.jpg" alt="Київ - Амстердам"
+                                <div class="h-48 overflow-hidden">
+                                    <img src="images/amsterdam.jpeg" alt="Київ - Амстердам"
                                         class="w-full h-full object-cover object-top">
                                 </div>
-                                <div class="p-3 md:p-4">
-                                    <h3 class="text-base md:text-lg font-semibold mb-1">Київ - Амстердам</h3>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Київ - Амстердам</h3>
                                     <div class="flex justify-between items-center">
-                                        <div class="text-gray-600 text-xs md:text-sm">
-                                            <div class="flex items-center gap-0.5 md:gap-1 mb-0.5 md:mb-1">
-                                                <i class="ri-time-line text-xs md:text-sm"></i>
+                                        <div class="text-gray-600">
+                                            <div class="flex items-center gap-1 mb-1">
+                                                <i class="ri-time-line"></i>
                                                 <span>24 години</span>
                                             </div>
-                                            <div class="flex items-center gap-0.5 md:gap-1">
-                                                <i class="ri-calendar-line text-xs md:text-sm"></i>
+                                            <div class="flex items-center gap-1">
+                                                <i class="ri-calendar-line"></i>
                                                 <span>Ср, Нд</span>
                                             </div>
                                         </div>
-                                        <div class="text-base md:text-lg font-bold text-[#1F2937]">від 2200 грн</div>
+                                        <div class="text-xl font-bold text-[#1F2937]">від 2200 грн</div>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a href="/napryamky/lviv-brussels"
-                            class="block min-w-[260px] sm:min-w-[280px] md:min-w-[300px]">
+                        <a href="/napryamky/lviv-brussels" class="block min-w-[300px] sm:min-w-[320px]">
                             <div
                                 class="bg-white shadow-md overflow-hidden !rounded-lg hover:shadow-lg transition-shadow">
-                                <div class="h-36 md:h-40 lg:h-48 overflow-hidden">
-                                    <img src="images/brussels.jpg" alt="Львів - Брюссель"
+                                <div class="h-48 overflow-hidden">
+                                    <img src="images/brussels.jpeg" alt="Львів - Брюссель"
                                         class="w-full h-full object-cover object-top">
                                 </div>
-                                <div class="p-3 md:p-4">
-                                    <h3 class="text-base md:text-lg font-semibold mb-1">Львів - Брюссель</h3>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Львів - Брюссель</h3>
                                     <div class="flex justify-between items-center">
-                                        <div class="text-gray-600 text-xs md:text-sm">
-                                            <div class="flex items-center gap-0.5 md:gap-1 mb-0.5 md:mb-1">
-                                                <i class="ri-time-line text-xs md:text-sm"></i>
+                                        <div class="text-gray-600">
+                                            <div class="flex items-center gap-1 mb-1">
+                                                <i class="ri-time-line"></i>
                                                 <span>22 години</span>
                                             </div>
-                                            <div class="flex items-center gap-0.5 md:gap-1">
-                                                <i class="ri-calendar-line text-xs md:text-sm"></i>
+                                            <div class="flex items-center gap-1">
+                                                <i class="ri-calendar-line"></i>
                                                 <span>Вт, Сб</span>
                                             </div>
                                         </div>
-                                        <div class="text-base md:text-lg font-bold text-[#1F2937]">від 2000 грн</div>
+                                        <div class="text-xl font-bold text-[#1F2937]">від 2000 грн</div>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a href="/napryamky/kyiv-zurich" class="block min-w-[260px] sm:min-w-[280px] md:min-w-[300px]">
+                        <a href="/napryamky/kyiv-zurich" class="block min-w-[300px] sm:min-w-[320px]">
                             <div
                                 class="bg-white shadow-md overflow-hidden !rounded-lg hover:shadow-lg transition-shadow">
-                                <div class="h-36 md:h-40 lg:h-48 overflow-hidden">
-                                    <img src="images/zurich.jpg" alt="Київ - Цюріх"
+                                <div class="h-48 overflow-hidden">
+                                    <img src="images/zurich.jpeg" alt="Київ - Цюріх"
                                         class="w-full h-full object-cover object-top">
                                 </div>
-                                <div class="p-3 md:p-4">
-                                    <h3 class="text-base md:text-lg font-semibold mb-1">Київ - Цюріх</h3>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Київ - Цюріх</h3>
                                     <div class="flex justify-between items-center">
-                                        <div class="text-gray-600 text-xs md:text-sm">
-                                            <div class="flex items-center gap-0.5 md:gap-1 mb-0.5 md:mb-1">
-                                                <i class="ri-time-line text-xs md:text-sm"></i>
+                                        <div class="text-gray-600">
+                                            <div class="flex items-center gap-1 mb-1">
+                                                <i class="ri-time-line"></i>
                                                 <span>26 годин</span>
                                             </div>
-                                            <div class="flex items-center gap-0.5 md:gap-1">
-                                                <i class="ri-calendar-line text-xs md:text-sm"></i>
+                                            <div class="flex items-center gap-1">
+                                                <i class="ri-calendar-line"></i>
                                                 <span>Чт, Нд</span>
                                             </div>
                                         </div>
-                                        <div class="text-base md:text-lg font-bold text-[#1F2937]">від 2400 грн</div>
+                                        <div class="text-xl font-bold text-[#1F2937]">від 2400 грн</div>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a href="/napryamky/lviv-krakow" class="block min-w-[260px] sm:min-w-[280px] md:min-w-[300px]">
+                        <a href="/napryamky/lviv-krakow" class="block">
                             <div
                                 class="bg-white shadow-md overflow-hidden !rounded-lg hover:shadow-lg transition-shadow">
-                                <div class="h-36 md:h-40 lg:h-48 overflow-hidden">
-                                    <img src="images/krakow.jpg" alt="Львів - Краків"
+                                <div class="h-48 overflow-hidden">
+                                    <img src="images/krakow.jpeg" alt="Львів - Краків"
                                         class="w-full h-full object-cover object-top">
                                 </div>
-                                <div class="p-3 md:p-4">
-                                    <h3 class="text-base md:text-lg font-semibold mb-1">Львів - Краків</h3>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Львів - Краків</h3>
                                     <div class="flex justify-between items-center">
-                                        <div class="text-gray-600 text-xs md:text-sm">
-                                            <div class="flex items-center gap-0.5 md:gap-1 mb-0.5 md:mb-1">
-                                                <i class="ri-time-line text-xs md:text-sm"></i>
+                                        <div class="text-gray-600">
+                                            <div class="flex items-center gap-1 mb-1">
+                                                <i class="ri-time-line"></i>
                                                 <span>8 годин</span>
                                             </div>
-                                            <div class="flex items-center gap-0.5 md:gap-1">
-                                                <i class="ri-calendar-line text-xs md:text-sm"></i>
+                                            <div class="flex items-center gap-1">
+                                                <i class="ri-calendar-line"></i>
                                                 <span>Пн, Ср, Пт, Нд</span>
                                             </div>
                                         </div>
-                                        <div class="text-base md:text-lg font-bold text-[#1F2937]">від 950 грн</div>
+                                        <div class="text-xl font-bold text-[#1F2937]">від 950 грн</div>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a href="/napryamky/uzhhorod-prague"
-                            class="block min-w-[260px] sm:min-w-[280px] md:min-w-[300px]">
+                        <a href="/napryamky/uzhhorod-prague" class="block">
                             <div
                                 class="bg-white shadow-md overflow-hidden !rounded-lg hover:shadow-lg transition-shadow">
-                                <div class="h-36 md:h-40 lg:h-48 overflow-hidden">
-                                    <img src="images/prague.jpg" alt="Ужгород - Прага"
+                                <div class="h-48 overflow-hidden">
+                                    <img src="images/prague.jpeg" alt="Ужгород - Прага"
                                         class="w-full h-full object-cover object-top">
                                 </div>
-                                <div class="p-3 md:p-4">
-                                    <h3 class="text-base md:text-lg font-semibold mb-1">Ужгород - Прага</h3>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Ужгород - Прага</h3>
                                     <div class="flex justify-between items-center">
-                                        <div class="text-gray-600 text-xs md:text-sm">
-                                            <div class="flex items-center gap-0.5 md:gap-1 mb-0.5 md:mb-1">
-                                                <i class="ri-time-line text-xs md:text-sm"></i>
+                                        <div class="text-gray-600">
+                                            <div class="flex items-center gap-1 mb-1">
+                                                <i class="ri-time-line"></i>
                                                 <span>12 годин</span>
                                             </div>
-                                            <div class="flex items-center gap-0.5 md:gap-1">
-                                                <i class="ri-calendar-line text-xs md:text-sm"></i>
+                                            <div class="flex items-center gap-1">
+                                                <i class="ri-calendar-line"></i>
                                                 <span>Вт, Чт, Сб</span>
                                             </div>
                                         </div>
-                                        <div class="text-base md:text-lg font-bold text-[#1F2937]">від 1400 грн</div>
+                                        <div class="text-xl font-bold text-[#1F2937]">від 1400 грн</div>
                                     </div>
                                 </div>
                             </div>
@@ -347,74 +335,72 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-6 md:mt-8">
+            <div class="text-center mt-10">
                 <a href="/napryamky"
-                    class="inline-block bg-primary text-[#1F2937] font-semibold px-5 py-2.5 md:px-6 md:py-3 lg:px-7 lg:py-3.5 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition-all text-xs md:text-sm lg:text-base">Всі
+                    class="inline-block bg-primary text-[#1F2937] font-semibold px-8 py-4 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition-all">Всі
                     напрямки</a>
             </div>
         </div>
     </section>
-    <section class="py-8 md:py-10 bg-[#1F2937] text-white">
+    <section class="py-16 bg-[#1F2937] text-white">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-xl md:text-2xl lg:text-3xl font-bold mb-3 md:mb-4">Бронюй зараз – плати при посадці</h2>
-            <p class="text-sm md:text-base lg:text-lg text-gray-300 mb-5 md:mb-6 max-w-xl mx-auto">Забезпечте собі
-                комфортну подорож до Європи без зайвих клопотів. Оберіть напрямок, дату та кількість пасажирів – і ми
-                зв'яжемося з вами для підтвердження.</p>
+            <h2 class="text-3xl font-bold mb-6">Бронюй зараз – плати при посадці</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Забезпечте собі комфортну подорож до Європи без
+                зайвих клопотів. Оберіть напрямок, дату та кількість пасажирів – і ми зв'яжемося з вами для
+                підтвердження.</p>
             <a href="/napryamky"
-                class="inline-block bg-primary text-[#1F2937] font-semibold px-5 py-2.5 md:px-6 md:py-3 lg:px-7 lg:py-3.5 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition-all text-xs md:text-sm lg:text-base">Забронювати
+                class="inline-block bg-primary text-[#1F2937] font-semibold px-8 py-4 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition-all">Забронювати
                 поїздку</a>
         </div>
     </section>
-    <section class="py-10 md:py-12">
+    <section class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-center text-[#1F2937] mb-6 md:mb-8">Про наш сервіс
-            </h2>
-            <div class="max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto text-sm md:text-base">
-                <p class="text-gray-700 mb-2.5 md:mb-3">Компанія "В дорогу" – це надійний сервіс міжнародних
-                    пасажирських перевезень, який з'єднує Україну з країнами Європи. Ми працюємо з 2018 року і за цей
-                    час успішно перевезли понад 50 000 пасажирів.</p>
-                <p class="text-gray-700 mb-2.5 md:mb-3">Наша місія – зробити подорожі до Європи доступними, комфортними
-                    та безпечними для кожного українця. Ми співпрацюємо тільки з перевіреними перевізниками, які мають
-                    всі необхідні дозволи та ліцензії на здійснення міжнародних перевезень.</p>
-                <p class="text-gray-700 mb-2.5 md:mb-3">Особливістю нашого сервісу є можливість бронювання без
-                    передоплати – ви оплачуєте поїздку тільки при посадці в автобус. Також ми пропонуємо послугу "від
-                    дверей до дверей" – наші водії заберуть вас із зазначеної адреси та доставлять максимально близько
-                    до пункту призначення.</p>
+            <h2 class="text-3xl font-bold text-center text-[#1F2937] mb-12">Про наш сервіс</h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-gray-700 mb-4">Компанія "В дорогу" – це надійний сервіс міжнародних пасажирських
+                    перевезень, який з'єднує Україну з країнами Європи. Ми працюємо з 2018 року і за цей час успішно
+                    перевезли понад 50 000 пасажирів.</p>
+                <p class="text-gray-700 mb-4">Наша місія – зробити подорожі до Європи доступними, комфортними та
+                    безпечними для кожного українця. Ми співпрацюємо тільки з перевіреними перевізниками, які мають всі
+                    необхідні дозволи та ліцензії на здійснення міжнародних перевезень.</p>
+                <p class="text-gray-700 mb-4">Особливістю нашого сервісу є можливість бронювання без передоплати – ви
+                    оплачуєте поїздку тільки при посадці в автобус. Також ми пропонуємо послугу "від дверей до дверей" –
+                    наші водії заберуть вас із зазначеної адреси та доставлять максимально близько до пункту
+                    призначення.</p>
                 <p class="text-gray-700">Ми постійно розширюємо географію наших маршрутів та покращуємо якість
                     обслуговування, щоб ваша подорож була максимально комфортною та приємною.</p>
             </div>
         </div>
     </section>
-    <footer class="bg-[#1F2937] text-white py-6 md:py-8">
+    <footer class="bg-[#1F2937] text-white py-12">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 lg:gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
-                    <div class="flex items-center gap-1.5 md:gap-2 mb-2.5 md:mb-3">
-                        <div class="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 flex items-center justify-center">
-                            <i class="ri-suitcase-line ri-sm md:ri-base text-primary"></i>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-suitcase-line ri-lg text-primary"></i>
                         </div>
-                        <span class="text-base md:text-lg font-['Pacifico']">В дорогу</span>
+                        <span class="text-xl font-['Pacifico']">В дорогу</span>
                     </div>
-                    <p class="text-gray-400 text-xs md:text-sm">Міжнародні пасажирські перевезення з України до Європи
-                    </p>
+                    <p class="text-gray-400">Міжнародні пасажирські перевезення з України до Європи</p>
                 </div>
                 <div>
-                    <h3 class="text-base md:text-lg font-semibold mb-2.5 md:mb-3">Контакти</h3>
-                    <ul class="space-y-1 md:space-y-1.5 text-xs md:text-sm">
-                        <li class="flex items-center gap-1.5 md:gap-2">
-                            <div class="w-3.5 h-3.5 md:w-4 md:h-4 flex items-center justify-center">
+                    <h3 class="text-lg font-semibold mb-4">Контакти</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2">
+                            <div class="w-5 h-5 flex items-center justify-center">
                                 <i class="ri-phone-line"></i>
                             </div>
                             <a href="tel:+380966788281">+380966788281</a>
                         </li>
-                        <li class="flex items-center gap-1.5 md:gap-2">
-                            <div class="w-3.5 h-3.5 md:w-4 md:h-4 flex items-center justify-center">
+                        <li class="flex items-center gap-2">
+                            <div class="w-5 h-5 flex items-center justify-center">
                                 <i class="ri-mail-line"></i>
                             </div>
                             <a href="mailto:info@vdorogu.ua">info@vdorogu.ua</a>
                         </li>
-                        <li class="flex items-center gap-1.5 md:gap-2">
-                            <div class="w-3.5 h-3.5 md:w-4 md:h-4 flex items-center justify-center">
+                        <li class="flex items-center gap-2">
+                            <div class="w-5 h-5 flex items-center justify-center">
                                 <i class="ri-map-pin-line"></i>
                             </div>
                             <span>м. Київ, вул. Хрещатик, 22</span>
@@ -422,8 +408,8 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-base md:text-lg font-semibold mb-2.5 md:mb-3">Популярні напрямки</h3>
-                    <ul class="space-y-1 md:space-y-1.5 text-xs md:text-sm">
+                    <h3 class="text-lg font-semibold mb-4">Популярні напрямки</h3>
+                    <ul class="space-y-2">
                         <li><a href="/napryamky/kyiv-warsaw" class="hover:text-primary transition-colors">Київ -
                                 Варшава</a></li>
                         <li><a href="/napryamky/lviv-krakow" class="hover:text-primary transition-colors">Львів -
@@ -437,29 +423,29 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-base md:text-lg font-semibold mb-2.5 md:mb-3">Інформація</h3>
-                    <ul class="space-y-1 md:space-y-1.5 text-xs md:text-sm">
+                    <h3 class="text-lg font-semibold mb-4">Інформація</h3>
+                    <ul class="space-y-2">
                         <li><a href="/about" class="hover:text-primary transition-colors">Про нас</a></li>
                         <li><a href="/rules" class="hover:text-primary transition-colors">Правила перевезення</a></li>
                         <li><a href="/faq" class="hover:text-primary transition-colors">Часті питання</a></li>
+                        <li><a href="/contacts" class="hover:text-primary transition-colors">Контакти</a></li>
                     </ul>
                 </div>
             </div>
             <div
-                class="border-t border-gray-700 mt-5 pt-5 flex flex-col sm:flex-row justify-between items-center gap-2.5 md:gap-3">
-                <p class="text-gray-400 text-center sm:text-left text-xs md:text-sm">© 2025 В дорогу. Всі права
-                    захищені.</p>
-                <div class="flex gap-2.5 md:gap-3">
+                class="border-t border-gray-700 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-center sm:text-left">© 2025 В дорогу. Всі права захищені.</p>
+                <div class="flex gap-4">
                     <a href="https://www.facebook.com/vdorogu.ua"
-                        class="w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary hover:text-[#1F2937] transition-colors">
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary hover:text-[#1F2937] transition-colors">
                         <i class="ri-facebook-fill"></i>
                     </a>
                     <a href="https://www.instagram.com/Vdorogu_ua"
-                        class="w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary hover:text-[#1F2937] transition-colors">
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary hover:text-[#1F2937] transition-colors">
                         <i class="ri-instagram-line"></i>
                     </a>
                     <a href="https://web.telegram.org/k/#@Vdorogu_ua"
-                        class="w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary hover:text-[#1F2937] transition-colors">
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary hover:text-[#1F2937] transition-colors">
                         <i class="ri-telegram-line"></i>
                     </a>
 
